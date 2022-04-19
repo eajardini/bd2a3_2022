@@ -33,4 +33,5 @@ group by 1;
 select cidade_age, sum(saldo_con)
 from agencia ag, conta con
 where ag.cod_age  = con.cod_age_con
+and ag.cidade_age = 'Araraquara'
 group by 1;
