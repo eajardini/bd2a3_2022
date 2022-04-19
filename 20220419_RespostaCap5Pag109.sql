@@ -27,11 +27,11 @@ group by 1;
 select nome_age, sum(saldo_con)
 from agencia ag, conta con
 where ag.cod_age  = con.cod_age_con
+and ag.cidade_age = 'Araraquara'
 group by 1;
 
 --5. Altere a consulta anterior para trazer a soma dos saldos das contas por cidade. Mostre o nome da cidade e a soma dos fundos.
 select cidade_age, sum(saldo_con)
 from agencia ag, conta con
 where ag.cod_age  = con.cod_age_con
-and ag.cidade_age = 'Araraquara'
 group by 1;
